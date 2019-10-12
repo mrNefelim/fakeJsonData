@@ -71,10 +71,10 @@
                 </div>
 
                 <div class="links">
-                    <a href="/clients">Clients</a>
-                    <a href="/orders">Orders</a>
-                    <a href="/true">True</a>
-                    <a href="/error">Error 500</a>
+                    <a href="/api/clients/3">Clients</a>
+                    <a href="/api//orders">Orders</a>
+                    <a href="/api//true">True</a>
+                    <a href="/api//error">Error 500</a>
                 </div>
             </div>
         </div>
