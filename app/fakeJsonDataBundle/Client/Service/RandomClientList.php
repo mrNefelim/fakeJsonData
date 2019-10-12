@@ -3,10 +3,8 @@
 
 namespace fakeJsonDataBundle\Client\Service;
 
-
 use fakeJsonDataBundle\Client\Entity\Client;
 use Illuminate\Http\Request;
-
 
 class RandomClientList
 {
@@ -27,7 +25,7 @@ class RandomClientList
     public function generate(Request $request)
     {
         $iterationCount = $request->id ?? 3;
-        $list = array_map([$this, 'randomClient'], range(0, $iterationCount));
+        $list = array_map([$this, 'randomClient'], range(1, $iterationCount));
 
         return $list;
     }
