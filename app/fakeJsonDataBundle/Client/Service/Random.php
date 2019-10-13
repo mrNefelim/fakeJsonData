@@ -3,9 +3,11 @@
 namespace fakeJsonDataBundle\Client\Service;
 
 use fakeJsonDataBundle\Client\Entity\Client;
+use fakeJsonDataBundle\Entity\EntityInterface;
+use fakeJsonDataBundle\Service\RandomGeneratorInterface;
 use Illuminate\Support\Collection;
 
-class RandomClient
+class Random implements RandomGeneratorInterface
 {
     /**
      * @var  Collection
@@ -23,7 +25,11 @@ class RandomClient
         self::$surnames = collect(['Петров', 'Леонов', 'Листьев', 'Ильин']);
     }
 
-    public function generate(): Client
+    /**
+     * @inheritDoc
+     * @return Client
+     */
+    public function generate(): EntityInterface
     {
         return (new Client())
             ->setName($this->fullName())
