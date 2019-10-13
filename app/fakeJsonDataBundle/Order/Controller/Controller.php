@@ -1,10 +1,10 @@
 <?php
 
-namespace fakeJsonDataBundle\Client\Controller;
+namespace fakeJsonDataBundle\Order\Controller;
 
 use App\Http\Controllers\Controller as BaseController;
-use fakeJsonDataBundle\Client\Service\Random;
 use fakeJsonDataBundle\DTO\Response;
+use fakeJsonDataBundle\Order\Service\Random;
 use fakeJsonDataBundle\Service\RandomGeneratorList;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
