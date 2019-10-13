@@ -19,5 +19,5 @@ Route::get('true', function ()
 });
 Route::get('error', function ()
 {
-    return response()->json('error', 503);
+    return response()->json('error', 500);
 });
