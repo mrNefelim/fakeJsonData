@@ -73,8 +73,8 @@
                 <div class="links">
                     <a href="/api/clients/3">Clients</a>
                     <a href="/api/orders/3">Orders</a>
-                    <a href="/api//true">True</a>
-                    <a href="/api//error">Error 500</a>
+                    <a href="/api/true">True</a>
+                    <a href="/api/error">Error 500</a>
                 </div>
             </div>
         </div>
