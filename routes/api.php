@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -13,10 +11,13 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
-
 Route::get('clients/{count}', '\fakeJsonDataBundle\Client\Controller\Controller@index');
 Route::get('orders/{count}', '\fakeJsonDataBundle\Order\Controller\Controller@index');
+Route::get('true', function ()
+{
+    return response()->json(true);
+});
+Route::get('error', function ()
+{
+    return response()->json('error', 503);
+});
