@@ -27,11 +27,6 @@ class Order implements EntityInterface
     private $date;
 
     /**
-     *
-     */
-    private $status;
-
-    /**
      * @inheritDoc
      */
     public function info()

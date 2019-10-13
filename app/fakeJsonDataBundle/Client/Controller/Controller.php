@@ -3,7 +3,6 @@
 namespace fakeJsonDataBundle\Client\Controller;
 
 use App\Http\Controllers\Controller as BaseController;
-use fakeJsonDataBundle\Client\Entity\Client;
 use fakeJsonDataBundle\Client\Service\Random;
 use fakeJsonDataBundle\DTO\Response;
 use fakeJsonDataBundle\Service\RandomGeneratorList;
