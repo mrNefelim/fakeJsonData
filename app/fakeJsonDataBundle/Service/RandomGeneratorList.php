@@ -14,6 +14,10 @@ class RandomGeneratorList
      */
     private $randomGenerator;
 
+    /**
+     * @param RandomGeneratorInterface $randomGenerator
+     * @return $this
+     */
     public function entity(RandomGeneratorInterface $randomGenerator)
     {
         $this->randomGenerator = $randomGenerator;
@@ -27,7 +31,7 @@ class RandomGeneratorList
      */
     public function generate(Request $request)
     {
-        $iterationCount = $request->id ?? 3;
+        $iterationCount = $request->count ?? 3;
         $list = array_map([$this, 'entityGenerate'], range(1, $iterationCount));
 
         return $list;

@@ -18,5 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::get('clients/{id}', '\fakeJsonDataBundle\Client\Controller\Controller@index');
-Route::get('orders/{id}', '\fakeJsonDataBundle\Order\Controller\Controller@index');
+Route::get('clients/{count}', '\fakeJsonDataBundle\Client\Controller\Controller@index');
+Route::get('orders/{count}', '\fakeJsonDataBundle\Order\Controller\Controller@index');

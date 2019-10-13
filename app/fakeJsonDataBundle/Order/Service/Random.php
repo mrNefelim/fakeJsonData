@@ -9,6 +9,9 @@ use fakeJsonDataBundle\Service\RandomGeneratorInterface;
 
 class Random implements RandomGeneratorInterface
 {
+    /**
+     * @inheritDoc
+     */
     public function generate(): EntityInterface
     {
         return (new Order())
